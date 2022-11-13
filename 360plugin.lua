@@ -88,7 +88,7 @@ local init_dfov = 0.0
 
 
 local doit = 0.0
-local res  = 1.0
+local res  = 20.0
 local dragging = false
 
 local smoothMouse = true
@@ -601,8 +601,8 @@ local save_props = function()
 			-- Workaround: hardware acceleration rarely works well, so we have to disable it.
 			-- Error: [ffmpeg] Impossible to convert between the formats supported by 
 			-- the filter 'mpv_src_default_in' and the filter 'auto_scaler_0'
-			mp.osd_message("Temporarily turning off hardware decoding.", 1.5)
-			mp.set_property("hwdec", "no")
+			mp.osd_message("Using Auto-Copy.", 1.5)
+			mp.set_property("hwdec", "auto-copy")
 		end
 	end
 end
