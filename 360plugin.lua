@@ -88,12 +88,12 @@ local init_dfov = 0.0
 
 
 local doit = 0.0
-local res  = 20.0
+local res  = 10.0
 local dragging = false
 
 local smoothMouse = true
 
-local scaling   = 'linear'
+local scaling   = 'lanczos'
 
  
 local in_stereo  = 'sbs'
